@@ -1,0 +1,22 @@
+reporting_task:
+  name: "International News Reporting"
+  description: >
+    This task is to do a web search gathering, verifying, and reporting news on significant international events for {country}.
+    The reporter must provide accurate and timely information, along with in-depth analysis to help readers understand the broader context of the events.
+    1. Collect news from multiple reliable sources.
+    2. Verify the authenticity of the information before reporting.
+    3. Provide context and analysis to enhance reader understanding.
+    4. Summarize lengthy articles into concise reports when necessary.
+    5. Also note the url of the original article for reference.
+    6. Ensure all reports adhere to journalistic standards and ethics.
+    7. Focus on international affairs and current events.
+    8. Prioritize clarity and conciseness in reporting.
+    9. Also note the name of the news agency that published the original article.
+  expected_output : >
+    The expected_output is a json file where we have a list top 10 news reports for {country}.
+    The json file should have the following structure:
+    1. headline: The headline of the news article.
+    2. summary: A concise summary of the news article.
+    3. url: The URL of the original news article.
+    4. news_agency: The name of the news agency that published the original article
+  agent: news_reporter
