@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# uv files
+*.lock
+
 # C extensions
 *.so
 
