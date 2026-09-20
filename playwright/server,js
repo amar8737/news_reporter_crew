@@ -1,0 +1,16 @@
+const express = require("express");
+
+const app = express();
+
+app.use(express.json());
+
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    service: "playwright"
+  });
+});
+
+app.listen(process.env.PORT || 3001, "0.0.0.0", () => {
+  console.log(`Playwright API listening on port ${process.env.PORT || 3001}`);
+});
